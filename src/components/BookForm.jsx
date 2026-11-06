@@ -35,7 +35,7 @@ function BookForm({ book, onBookAdded: onSaved, onCancelEdit }) {
       newErrors.price = "Enter a valid price.";
     } 
     else if (Number(price) < 0) {
-      newErrors.price = "Price cannot be negative.";
+      newErrors.price = "Price can't be negative.";
     }
 
     setErrors(newErrors);
